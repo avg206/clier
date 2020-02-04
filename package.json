@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "main": "index.js",
   "bin": {
-    "clier": "bin/clier.js"
+    "clier": "./bin/clier.js"
   },
   "repository": "git@github.com:avg206/clier.git",
   "author": "Anatoli Huseu <avg.tolik@gmail.com>",
