@@ -1,0 +1,38 @@
+{
+  "name": "@avg206/clier",
+  "version": "0.1.0",
+  "main": "index.js",
+  "bin": {
+    "clier": "bin/clier.js"
+  },
+  "repository": "git@github.com:avg206/clier.git",
+  "author": "Anatoli Huseu <avg.tolik@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@avg206/frontend-config": "github:avg206/frontend-config",
+    "commander": "^4.1.1"
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/@avg206/frontend-config/eslint/javascript.js"
+  },
+  "eslintIgnore": [
+    "node_modules",
+    "dist"
+  ],
+  "prettier": "@avg206/frontend-config/prettier",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,json,md}": [
+      "prettier --write",
+      "git add"
+    ],
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  }
+}
