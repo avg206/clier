@@ -9,8 +9,10 @@
   "author": "Anatoli Huseu <avg.tolik@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@avg206/frontend-config": "github:avg206/frontend-config",
     "commander": "^4.1.1"
+  },
+  "devDeoendencies": {
+    "@avg206/frontend-config": "github:avg206/frontend-config"
   },
   "eslintConfig": {
     "extends": "./node_modules/@avg206/frontend-config/eslint/javascript.js"
